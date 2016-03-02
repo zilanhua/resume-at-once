@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简历3</title>
+</head>
+<style>
+ @-webkit-keyframes fadeIn {
+	0% {opacity: 0.3; box-shadow: 0 0 0px #FFF,0 0 0px #FFF inset; }
+	100% {opacity: 1; box-shadow: 0 0 10px #FFF,0 0 8px #FFF inset; }
+}
+@-moz-keyframes fadeIn {
+	0% {opacity: 0.3; box-shadow: 0 0 0px #FFF,0 0 0px #FFF inset; }
+	100% {opacity: 1; box-shadow: 0 0 10px #FFF,0 0 8px #FFF inset; }
+}
+@-o-keyframes fadeIn {
+	0% {opacity: 0.3; box-shadow: 0 0 0px #FFF,0 0 0px #FFF inset; }
+	100% {opacity: 1; box-shadow: 0 0 10px #FFF,0 0 8px #FFF inset; }
+} 
+
+*{margin: 0; border: 0; padding: 0;}
+body{overflow: hidden;
+	-webkit-animation:fadeIn 1s ease-in 0s 1 normal;
+    -moz-animation:fadeIn 1s ease-in 0s 1 normal;
+    -o-animation:fadeIn 1s ease-in 0s 1 normal;
+    animation:fadeIn 1s ease-in 0s 1 normal;
+}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+.center{text-align: center;}
+#head{position: relative; width: 100%; height: 90%; background-color: #99F; text-align: center; filter: alpha(opacity:100); opacity: 1; color: #FFF; z-index: 2;}
+#btnShow{position: absolute; display: inline-block; bottom: 6px; width: 24px; margin-left: -16px; height: 24px; border: 1px solid #FFF; border-radius: 12px; color: #FFF; line-height: 16px; font-size: 20px; cursor: pointer;
+	 -webkit-animation:fadeIn 2s ease-in 0s infinite alternate;
+	    -moz-animation:fadeIn 2s ease-in 0s infinite alternate;
+	    -o-animation:fadeIn 2s ease-in 0s infinite alternate;
+	    animation:fadeIn 2s ease-in 0s infinite alternate; 
+}
+
+#tip{position: absolute; margin-left: -46px; margin-top: -39px; opacity: 0.8;}
+#tip div{background-color: #C7EDCC; font-size: 12px; color: #555; border-radius: 3px}
+#tip #dsj{display: inline-block; border: transparent 0.5em solid; border-top-color: #C7EDCC; }
+#jianLi{display: inline-block; width: 600px; margin-bottom: 36px; padding: 10px 20px; text-align: left; border: 1px solid #CCC; border-radius: 10px; box-shadow: 0 0 7px #EEE inset;}
+#jianLi p{font-size: 20px;}
+#jianLi p a{color: #FFF;}
+.impt{font-size: 24px; font-family: "微软雅黑"; text-shadow: 1px 2px 1px #AAA;}
+.impt:hover{text-shadow: 0 0 5px #F7C38A;}
+#allPage{position: absolute; top: 39px; bottom: 26px; z-index: -2; left: 0px;}
+#allpage span{font-size: 20px; font-family: "微软雅黑"; color: #FFF;}
+.page{float: left; height: 100%; overflow: auto; /*background-color: #ECF;*/}
+#foot{position: fixed; height: 26px; width: 100%; bottom: 0; background-color: #686; text-align: center;}
+.btnPage{display: inline-block; width: 12px; height: 12px; border-radius: 6px; background-color: #FAC; font-size: 8px; line-height: 8px; cursor: pointer;}
+.page-left{display: inline-block; vertical-align: middle; float: left; width: 40%; height: 100%; /*background-color: #BAB;*/}
+.page-right{display: inline-block; vertical-align: middle; /*padding: 50px 0 30px;*/ float: left; /*width: 50%;*/width: 60%; height: 100%; /*background-color: #ABA;*/}
+/*-----page1-----*/
+#page1 img{width: 100%; margin-top: 20px;}
+#page1 p{padding: 18px 30px;}
+#page1 span{font-size: 18px; color: #FED648;}
+/*-----page2-----*/
+#page2 #page2-T{width: 100%; /*height: 30%;*/ }
+#page2 #page2-T p{font-size: 17px; line-height: 21px;}
+#page2 #page2-B{width: 100%; /*height: 70%;*/}
+#page2 .page2-B-header{
+	text-align:center;
+	background-color:#00FF7F;
+	color:#fff;
+	width:100%;
+	height:58px;
+}
+#page2 .page2-B-header h1{
+	line-height:58px;
+	font-family:萝莉体 第二版;
+}
+#page2 #page2-B-cont{
+	height: 100%;
+	/*margin: 5px;*/
+	box-shadow: 0 0 8px;
+	text-align: center;
+}
+
+#page2 .gs{
+	color:#666;
+}
+#page2 .gs input{
+	width:12px;
+	color:#333;
+	background-color:#FFDAB9;
+	border: none;
+}
+#page2 .gs span{
+	font-size:13px;
+	color:#999;
+}
+#page2 .time{
+	margin:0  auto;
+	color: #799;
+}
+#page2 .table{
+	margin:0 auto;
+	width:924px;
+	font-family:微软雅黑;
+	color: #555;
+}
+#page2 .td,.td input{
+	width: 128px;
+	height: 30px;
+	float: left;
+	background-color:#FFDAB9;
+	color: #444;
+	border: 1px solid;
+	border-color: #F5F5DC;
+	text-align: center;
+	/*line-height: 28px;*/
+	border-radius:5px;
+}
+
+#page2 .tablehead input{
+	margin: 0;
+	padding: 0;
+	border:none;
+	float: left;
+	text-align:center;
+	line-height: 30px;
+	font-size: 14px;
+}
+#page2 .tablebody input{
+	margin: 0;
+	padding: 0;
+	border:none;
+	text-align:center;
+	line-height: 30px;
+}
+#page2 input:hover{
+	background-color: #ffe8b9;
+}
+#page2 .tablefoot{
+	margin: 0;
+	padding: 0;
+	border:none;
+	text-align:center;
+	line-height: 28px;
+	color: red;
+}
+#page2 .tablefoot .td{
+	background-color: #9faff5;
+}
+#page2 #name,#page2 #n_m,#page2 #n_n,#page2 #n_wm,#page2 #n_wa,#page2 #n_wn,#page2 #money{
+	width: 142px;
+	text-align: center;
+	background-color: #00ff7f;
+}
+#page2 #clearname{
+	font-size:13px;
+	color:#aaa;
+	cursor:pointer;
+}
+#page2 #clearname:hover{
+	color:#bbb;
+}
+
+
+#page2 #an{
+	width: 142px;
+	/*height: 30px;*/
+	background-color:#726adf;
+	color:#eee;
+	line-height:32px;
+	font-size: 14px;
+	cursor:pointer;
+}
+#page2 #an:hover{
+	background-color:#6666cc;
+}
+#page2 #addMan{
+	margin-top: 1px;
+	margin-left: 0px;
+	/*padding-left: 4px;*/
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 2px 13px 13px 2px;
+	background-color: #D0D6D9;
+	font-size: 22px;
+	line-height: 25px;
+	/*vertical-align: ;*/
+	color: #F1F1F1;
+	cursor:pointer;
+	/*box-shadow: 3px 3px 8px #AAA;*/
+}
+#page2 #addMan:hover{
+	background-color: #DAE1E5;
+	color: #FFF;
+}
+#page2 #subMan{
+	margin-top: 32px;
+	margin-left: 0px;
+	/*padding-left: 5px;*/
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 2px 13px 13px 2px;
+	background-color: #D0D6D9;
+	font-size: 24px;
+	line-height: 25px;
+	/*vertical-align: ;*/
+	color: #F1F1F1;
+	cursor:pointer;
+	/*box-shadow: 3px 3px 8px #AAA;*/
+}
+#page2 #subMan:hover{
+	background-color: #DAE1E5;
+	color: #FFF;
+}
+
+/*-----page3-----*/
+#page3 #page3-R-cont{width: 500px; margin: auto; }
+#page3 canvas{box-shadow: 5px 6px 7px #777;}
+#page3 table{margin-top: 6px; border-spacing: 2px; background-color: #FFC;}
+#page3 td,input{width: 70px; height: 20px;}
+#page3 caption input{width: 100px; text-align: center;}
+/*#page3 #canvBtn1{background-color: green; cursor: pointer;}*/
+#page3 .canvBtn-L{background-color: green; cursor: pointer;}
+/*-----page4-----*/
+#page4 ul{margin: 28px 0 0 20px; font-size: 16px;}
+#page4 ul li{margin-top: 14px; /*list-style: none;*/}
+#page4 p{margin: 10px 0 0 20px; font-size: 28px;}
+#page4 span{font-size: 20px;}
+</style>
+<body>
+	<div id="head">
+		<div id="jianLi">
+			<div class="center"><h2>简历</h2></div><br>
+			<p>我叫<span class="impt" id="myName">陈枫</span><br>
+				&emsp;&emsp;<span class="impt">男</span>&emsp;&emsp;<span class="impt">汉族</span>&emsp;&emsp;<span class="impt">1993年2月9日</span>生<br>
+				来自<span class="impt">黑龙江省鸡西市</span>&emsp;&emsp;祖籍<span class="impt">山东省泰安县</span><br>
+				&emsp;&emsp;<span class="impt">齐齐哈尔工程学院</span>应届毕业生<br>
+				&emsp;&emsp;<span class="impt">机械设计制造及其自动化</span>专业-<span class="impt">本科</span></p><br>
+			<p>手机：<span class="impt">18946232358</span></p>
+			<p>邮箱：<a href="Mailto:744320491@qq.com">744320491@qq.com</a>（常用）<br>
+			&emsp;&emsp;&emsp;<a href="Mailto:syzxcf126@126.com">syzxcf126@126.com</a></p>
+			<p>Github：<a href="https://github.com/fengxxc" target="_blank">https://github.com/fengxxc</a></p><br>
+			<p>爱好：钻研任何新奇有趣的技能，读书、吉他、跑步、做梦</p><br>
+			<div class="center">
+				2015年11月接触前端技术，仿佛发现了新大陆<br>
+				废寝忘食自学HTML/CSS/JavaScript至今，颇有小成<br>
+				今天，我想说，是时候了...<br>
+			</div>
+		</div>
+		<br>&nbsp;
+		<span id="tip">
+			<div>发现更精彩的我</div>
+			<span id="dsj"></span>
+		</span>
+		<span id="btnShow" title="收起简历，了解更多">︿</span>
+	</div>
+	<div id="allPage">
+		<div class="page" id="page1">
+			<div class="page-left">
+				<img src="http://g.hiphotos.baidu.com/image/pic/item/c8ea15ce36d3d539682d4f943d87e950352ab051.jpg"  alt="哎呀~本来这里应该是图片，可素，网络好像粗了问题，看不到了~">
+			</div>
+			<div class="page-right">
+				<p>
+					本来每天看看闲书、帮同学修修电脑、给妹纸p个图什么的，日子波澜不惊，倒也悠闲自在<br><br>
+					直到偶然的一天，读一本叫《三体》的小说，仿佛敲开了新世界的大门<br><br>
+					《三体》中对人类未来世界是这样描述的——<br>
+					<i>“传统电脑不复存在，一切平面的东西，大到墙面小到烟盒，都成为显示屏，都可以上网”</i><br><br>
+					<!-- 这一幕，深深地触动了我<br><br> -->
+					我隐约意识到，或许，B/S架构才是未来的主流，到那时分布式服务器遍布全球，一切数据存在这些服务器上；客户端只需一个浏览器，用户只要有一个ID，就可以在任何一个有“屏幕”的地方，打开“我的电脑”<br><br>
+					也许前端交互和后端数据处理，才是未来IT工程师的主要工作<br><br>
+					而这，便是我立志成为一名前端工程师的原因<br><br>
+					<span>温馨提示：滑动鼠标滑轮、按方向键均可以翻页哦~</span>
+				</p>
+			</div>
+		</div>
+		<div class="page" id="page2">
+			<div class="" id="page2-T">
+				<div class="center">
+					<p><br>
+					就这样，我踏上了前端工程师的征程<br>
+					因为大学时在学校图书馆兼职助理管理员，查阅各种书和资料很方便<br>
+					我便利用课余时间自学起来<br>
+					一个月后，我用刚刚掌握的javascript，写了一个计算助理馆员工资的“工资计算器”<br>
+					如今回看代码简直不忍直视，但当时真的超兴奋~<br><br>
+				</p>
+				</div>
+			</div>	
+			<div class="" id="page2-B">
+				<div id="page2-B-cont">
+					<div class="page2-B-header">
+						<h1>$工资计算器$</h1>
+					</div>
+					<span class="gs">
+						(￣︶￣) ╯咱先谈好：<span>(改后即生效↓)</span><br/>
+						中午/班<input class="dfdMoney" type="text" value=3 size="1">元
+						、晚班/班<input class="dfdMoney" type="text" value=6 size="1">元
+						、双休上/班<input class="dfdMoney" type="text" value=5 size="1">元
+						、双休下/班<input class="dfdMoney" type="text" value=5 size="1">元
+						、双休晚/班<input class="dfdMoney" type="text" value=5 size="1">元
+					</span>
+					<div class="table" name="table" id="table">
+						<div class="tablehead clearfix" id="tablehead">
+							<div class="td" id="name">
+								馆员→_→
+								<span id="clearname" onclick="clearName()"> [清空]</span>
+							</div>
+							<div class="td">
+								<input type="text" class="name" value="张小昊" size="8">
+							</div>
+							<div class="td">
+								<input type="text" class="name" value="罗小京" size="8">
+							</div>
+							<div class="td">
+								<input type="text" class="name" value="崔小康" size="8">
+							</div>
+							<div class="td">
+								<input type="text" class="name" value="王小琦" size="8">
+							</div>
+							<div class="td">
+								<input type="text" class="name" value="陈小枫" size="8">
+							</div>
+							<div class="td">
+								<input type="text" class="name" value="?_?" size="8">
+							</div>
+							<span id="addMan" title="添加一个馆员" onclick="addMan()">&nbsp;+</span>
+							<span id="subMan" title="去掉一个馆员" onclick="subMan()">&nbsp;-</span>
+						</div>
+						<div class="tablebody clearfix">
+							<div class="td" id="n_m">
+								中午
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+						</div>
+						<div class="tablebody clearfix">
+							<div class="td" id="n_n">
+								晚班
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+						</div>
+						<div class="tablebody clearfix">
+							<div class="td" id="n_wm">
+								双休上午
+							</div>
+							<div class="td">
+								<input  class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input  class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input  class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input  class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input  class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input  class="num" type="text" value=0 size="8">
+							</div>
+						</div>
+						<div class="tablebody clearfix">
+							<div class="td" id="n_wa">
+								双休下午
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+						</div>
+						<div class="tablebody clearfix">
+							<div class="td" id="n_wn">
+								双休晚班
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+							<div class="td">
+								<input class="num" type="text" value=0 size="8">
+							</div>
+						</div>
+						<div class="tablefoot clearfix" id="tablefoot">
+							<div class="td" id="an" onclick="money()">
+								点我计算工资
+							</div>
+							<div class="td">
+								<span class="money">$</span>
+							</div>
+							<div class="td">
+								<span class="money">$</span>
+							</div>
+							<div class="td">
+								<span class="money">$</span>
+							</div>
+							<div class="td">
+								<span class="money">$</span>
+							</div>
+							<div class="td">
+								<span class="money">$</span>
+							</div>
+							<div class="td">
+								<span class="money">$</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<div class="page" id="page3">
+			<div class="page-right">
+				<br>
+				<div id="page3-R-cont">
+					<canvas id="canvas" width="500" height="400" style="background-color: #DDD"></canvas>
+					<br>
+					<table>
+						<tr id="canvName">
+							<td><input type="text" value="项目"></td>
+							<td><input type="text" value="项目一"></td>
+							<td><input type="text" value="项目二"></td>
+							<td><input type="text" value="项目三"></td>
+							<td><input type="text" value="项目四"></td>
+							<td><input type="text" value="项目五"></td>
+						</tr>
+						<tr id="canvData">
+							<td><input type="text" value="数值"></td>
+							<td><input type="text" value=0></td>
+							<td><input type="text" value=0></td>
+							<td><input type="text" value=0></td>
+							<td><input type="text" value=0></td>
+							<td><input type="text" value=0></td>
+						</tr>
+					</table>
+					<input id="canvBtn" type="button" value="确定">
+				</div>
+			</div>	
+			<div class="page-left">
+				<p><br>
+					后来学HTML5认识了canvas标签，兴致大增<br><br>
+					遂自己动手做了一个在线生成柱形统计图的东东，会动的哦~<br><br>
+					您可以在左边表格随便输入什么看看效果<br><br>
+					或者——<br><br>						
+					<span class="canvBtn-L">我的基本属性</span><br><br>
+					<span class="canvBtn-L">我的各项能力</span><br><br>
+					<span class="canvBtn-L">我的开发技能</span><br><br>
+					（以上数据仅供演示参考，实际以真人为准(*^__^*) ）<br><br>	
+					<a href="https://github.com/fengxxc/canvas-demo" target="_blank">我的Github</a>有更多功能的版本哦~	
+				</p>
+			</div>
+		</div>
+		<div class="page" id="page4">
+			<div class="page-left">
+				<img width="100%" src="http://h.hiphotos.baidu.com/image/pic/item/e1fe9925bc315c60a3afa3ba8ab1cb13495477a9.jpg" alt="哎呀~本来这里应该是图片，可素，网络好像粗了问题，看不到了~">
+			</div>	
+			<div class="page-right">
+			<p>说了那么多，我到底会啥？</p>
+				<ul>
+					<li><span>HTML、CSS</span>：写静态网页没问题；html5学习中，对canvas情有独钟；css3学习中，会圆角、阴影等实用属性，会简单的帧动画</li>
+					<li><span>Javascript</span>：基础的dom操作、运动框架、基础的事件监听及其他基础的技巧和算法，面向对象编程的思维还没有完全吃透</li>
+					<li><span>jQuery</span>：学习中，目前只会选择器和dom操作</li>
+					<li><span>后端</span>：PHP学习中，目前熟悉http协议，懂得网络通信的整个流程，会搭建简单的Apache服务器</li>
+					<li><span>Photoshop</span>：切图没问题，工具都会用，略知一点奇技淫巧，但缺少美术基础，对色彩不敏感，UI设计捉急</li>
+					<li><span>各种前端框架</span>：目前只在“听说过”这一阶段，相信只要基础打牢，框架可以很快上手</li>
+					<li><span>浏览器兼容</span>：学习中，借助搜索引擎能独立解决大部分问题，当然，IE6、7除外……</li>
+					<li><span>开发工具</span>：代码编写主要用sublime；调试主要用firebug；github刚刚开通，摸索、熟悉中...</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="page">
+			<div class="page-left">
+				
+			</div>	
+			<div class="page-right">
+				
+			</div>
+		</div>
+	</div>
+	<div id="foot">
+		<span class="btnPage">1</span>
+		<span class="btnPage">2</span>
+		<span class="btnPage">3</span>
+		<span class="btnPage">4</span>
+		<span class="btnPage">5</span>
+	</div>
+<script>
+//当前页数的索引
+var pageIndex = 0;
+//获取head初始高度
+var head = document.getElementById('head');
+var jianLiHeight = getStyle(head,'height');
+//获取页面宽度
+var stageWidth = head.clientWidth;
+
+window.onload = function(){
+	stageWidth = head.clientWidth;
+	
+	var allPage = document.getElementById('allPage');
+	var page = allPage.getElementsByTagName('div');
+	for (var i = 0; i < page.length; i++) {
+		if (page[i].className == "page") {
+			page[i].style.width = stageWidth+"px";
+		}
+	}
+	allPage.style.width = stageWidth*5 + "px";
+	
+	moveJianli();
+	//点标签切换
+	var btnPages = document.getElementById('foot').getElementsByTagName('span');
+	for (var i = 0; i < btnPages.length; i++) {
+		btnPages[i].index = i;
+		btnPages[i].onclick = function() {
+			pageIndex = this.index;
+			changePage(pageIndex);
+		}
+	}
+
+//page3 js
+	drawCoord();
+	canvBtn.onclick = function (){
+			drawAllXls();
+	}
+
+}
+//升降简历函数
+function moveJianli() {
+	var btnShow = document.getElementById('btnShow');
+	btnShow.onclick = function(){
+		var btnShow = document.getElementById('btnShow');
+		var jianLi = document.getElementById('jianLi');
+		
+		var tip = document.getElementById('tip');
+		if (btnShow.innerHTML == "︿") {			
+			tip.style.display = "none";
+			startMove(head,{height:20,opacity:70});
+			startMove(jianLi,{opacity:0},function (){
+				jianLi.style.display = "none";
+			});
+			btnShow.style.lineHeight = "30px";
+			btnShow.innerHTML = "﹀";
+			btnShow.title = "展开简历";
+			//给页面绑定滑轮滚动事件
+		    if (document.addEventListener) {
+		        document.addEventListener('DOMMouseScroll', scrollFunc, false);
+		    }
+		    //滚动滑轮触发scrollFunc方法
+   			window.onmousewheel = document.onmousewheel = scrollFunc; 
+		} else {
+			startMove(head,{height:parseInt(jianLiHeight),opacity:100},function(){
+				startMove(jianLi,{opacity:100});
+			});
+			jianLi.style.display = "inline-block";
+			
+			btnShow.style.lineHeight = "16px";
+			btnShow.innerHTML = "︿";
+    		btnShow.title = "收起简历";
+    		//滚动滑轮不触发scrollFunc方法
+    		document.removeEventListener('DOMMouseScroll', scrollFunc);
+    		window.onmousewheel = document.onmousewheel = null; 
+		}
+	}
+}
+// 滑轮翻页
+var scrollFunc = function (e) {
+    var direct = 0;
+    e = e || window.event;
+    if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件             
+        if (e.wheelDelta > 0) { //当滑轮向上滚动时
+            // alert("滑轮向上滚动");
+            pageIndex -= 0.5;
+            if (pageIndex >= 5) {
+            	pageIndex = pageIndex%5;
+            }else if (pageIndex < 0) {
+            	pageIndex = 0;
+            }
+            changePage(pageIndex);
+        }
+        if (e.wheelDelta < 0) { //当滑轮向下滚动时
+            // alert("滑轮向下滚动");
+            pageIndex += 0.5;
+            if (pageIndex >= 5) {
+            	pageIndex = pageIndex%5;
+            }else if (pageIndex < 0) {
+            	pageIndex = 0;
+            }
+            changePage(pageIndex);
+        }
+    } else if (e.detail) {  //Firefox滑轮事件
+        if (e.detail> 0) { //当滑轮向下滚动时
+            // alert("滑轮向下滚动");
+            pageIndex += 1;
+            if (pageIndex >= 5) {
+            	pageIndex = pageIndex%5;
+            }else if (pageIndex < 0) {
+            	pageIndex = 0;
+            }
+            changePage(pageIndex);
+        }
+        if (e.detail< 0) { //当滑轮向上滚动时
+            // alert("滑轮向上滚动");
+            pageIndex -= 1;
+            if (pageIndex >= 5) {
+            	pageIndex = pageIndex%5;
+            }else if (pageIndex < 0) {
+            	pageIndex = 0;
+            }
+            changePage(pageIndex);
+        }
+    }
+   // ScrollText(direct);
+}
+
+//按↕←→键翻页
+document.onkeydown=function(ev){
+	var e = ev || window.event || arguments.callee.caller.arguments[0];
+	if(e && e.keyCode==37 || e && e.keyCode==38){ // 按 ↑←
+		// e.returnValue=false;
+		pageIndex -= 1;
+        if (pageIndex >= 5) {
+        	pageIndex = pageIndex%5;
+        }else if (pageIndex < 0) {
+        	pageIndex = 0;
+        }
+        changePage(pageIndex);
+        return false;
+	}
+	if(e && e.keyCode==39 || e && e.keyCode==40){ // 按 →↓
+		// e.returnValue=false;
+		pageIndex += 1;
+        if (pageIndex >= 5) {
+        	pageIndex = pageIndex%5;
+        }else if (pageIndex < 0) {
+        	pageIndex = 0;
+        }
+        changePage(pageIndex);
+        return false;
+	}
+}; 
+
+
+//翻页函数，传参页数的索引
+function changePage(objIndex) {
+	var btnPages = document.getElementById('foot').getElementsByTagName('span');
+	for (var j = 0; j < btnPages.length; j++) {
+		btnPages[j].style.backgroundColor = "#FAC";
+	}
+	btnPages[objIndex].style.backgroundColor = "#FF2832";
+	allPageL = (-objIndex*stageWidth);
+	startMove(allPage,{'left':allPageL});
+}
+
+//获取obj属性名为name的函数，兼容
+function getStyle(obj,name) {
+	if (obj.currentStyle) {
+		return obj.currentStyle[name];
+	} else {
+		return getComputedStyle(obj,0)[name];
+	}
+}
+
+//完美运动框架，多物体，任意属性(包括透明度变化)，任意目标值，链式or并行链式
+function startMove(obj,json,fnEnd) {
+	clearInterval(obj.timer)
+	obj.timer = setInterval(function(){
+		var bStop = true;
+		for (var attr in json) {
+			if (attr == 'opacity') {
+			var cur = Math.round(parseFloat(getStyle(obj,attr))*100);
+			} else {
+			var cur = parseInt(getStyle(obj,attr));
+			}
+		
+			var speed = 0;
+			speed = (json[attr] - cur)/4;
+			speed = speed>0?Math.ceil(speed):Math.floor(speed);
+			if (cur != json[attr]) {bStop = false;}
+			if (cur == json[attr]) {
+				clearInterval(obj.timer);
+				if (fnEnd) {fnEnd();}
+			} else {
+				if (attr == 'opacity') {
+					obj.style.filter = 'alpha(opacity:'+(cur + speed)+')';
+					obj.style.opacity = (cur + speed)/100;
+				} else {
+					obj.style[attr] = cur + speed +"px";
+				}
+			}
+		}
+		if (bStop) {
+			clearInterval(obj.timer);
+			if (fnEnd) {fnEnd();}
+		}
+	},30)
+}
+
+// -----page2 js-----
+//计算工资函数
+	function money() {
+		//table列数
+		var table_l = document.getElementById("tablehead").getElementsByTagName("div").length-1;
+		console.log(table_l);
+		var num = document.getElementsByClassName("num");
+		var dfdMoney = document.getElementsByClassName("dfdMoney");
+		var money = document.getElementsByClassName("money");
+		 //单列（单人）获取的数组
+		 var personNum = new Array(5);
+		 //获取元素、计算、输出
+		 for (var i = 0,j = 0; j < table_l; j++){
+		 	i = j;
+			 for (var n = 0; n < 5; n++) {
+			 	personNum[n] = num[i].value;
+			 	i+=table_l;
+			 	//console.log(i);
+			 }
+			 var personMoney = personNum[0]*dfdMoney[0].value + personNum[1]*dfdMoney[1].value + personNum[2]*dfdMoney[2].value + personNum[3]*dfdMoney[3].value + personNum[4]*dfdMoney[4].value;
+			 money[j].innerHTML=personMoney+"元";
+		}	 
+	}
+
+//清空姓名
+	function clearName(){
+		var name = document.getElementsByClassName("name");
+		//console.log(name);
+		for (var i = 0;i<name.length;i++)
+		name[i].value = "";
+
+	}
+
+//获取table宽度；
+var table_width = document.getElementById("table").clientWidth;
+
+//添加一个馆员(表格添加一列)
+	function addMan(){
+		//添加一个姓名行
+		var tablehead = document.getElementById("tablehead");
+		//var addMan = document.getElementById("addMan");
+		var tableheadTd = document.createElement("div");
+		tableheadTd.className = "td";
+		// tablehead.appendChild(tableheadTd);
+		tablehead.insertBefore(tableheadTd,document.getElementById("subMan"));
+			//在新添加的姓名行里添加input
+			var tableheadTd_Input = document.createElement("input");
+			tableheadTd_Input.type = "text";
+			tableheadTd_Input.className = "name";
+			tableheadTd_Input.value = "?_?";
+			tableheadTd_Input.size = "8";
+			tableheadTd.appendChild(tableheadTd_Input);
+		//添加五个数据行，用for循环
+		var tablebody = document.getElementsByClassName("tablebody");
+		for (var i = 0;i < 5;i++){
+			//添加数据行
+			var tablebodyTd = document.createElement("div");
+			tablebodyTd.className = "td";
+			tablebody[i].appendChild(tablebodyTd);
+				//在新添加的数据行里添加input
+				var tablebodyTd_input = document.createElement("input");
+				tablebodyTd_input.className = "num";
+				tablebodyTd_input.type = "text";
+				tablebodyTd_input.value = 0;
+				tablebodyTd_input.size = "8";
+				tablebodyTd.appendChild(tablebodyTd_input);
+		}
+		//添加显示工资行
+		var tablefoot = document.getElementById("tablefoot");
+		var tablefootTd = document.createElement("div");
+		tablefootTd.className = "td";
+		tablefoot.appendChild(tablefootTd);
+			//在新添加的工资行里添加span
+			var tablefootTd_span = document.createElement("span");
+			tablefootTd_span.className = "money";
+			tablefootTd_span.innerHTML = "$";
+			tablefootTd.appendChild(tablefootTd_span);
+
+		//改变table宽度，使其自适应居中布局
+		table_width += 130;
+		var w=document.getElementById("table").style.width = table_width+"px";
+		console.log(w);
+
+	}
+//去掉一个馆员
+	function subMan() {
+		//去掉一个名
+		var tablehead_Div = document.getElementById("tablehead").getElementsByTagName("div");
+		var tablehead_lastdiv = tablehead_Div[tablehead_Div.length-1];
+		tablehead_lastdiv.parentNode.removeChild(tablehead_lastdiv);
+		//去掉五个数据列
+		for (var i = 0; i <5; i++) {
+			var tablebody_Div = document.getElementsByClassName("tablebody")[i].getElementsByTagName("div");
+			var tablebody_lastdiv = tablebody_Div[tablebody_Div.length-1];
+			tablebody_lastdiv.parentNode.removeChild(tablebody_lastdiv);
+		};
+		//去掉该列显示工资div
+		var tablefoot_Div = document.getElementById("tablefoot").getElementsByTagName("div");
+		var tablefoot_lastdiv = tablefoot_Div[tablefoot_Div.length-1];
+		tablefoot_lastdiv.parentNode.removeChild(tablefoot_lastdiv);
+		//改变table宽度，使其自适应居中布局
+		table_width -= 130;
+		var w=document.getElementById("table").style.width = table_width+"px";
+		console.log(w);
+	}
+
+// -----page3 js-----
+var canvas = document.getElementById('canvas');
+var cxt = canvas.getContext('2d');
+var canvNames = document.getElementById('canvName').getElementsByTagName('input');
+var canvDatas = document.getElementById('canvData').getElementsByTagName('input');
+var canvBtn = document.getElementById('canvBtn');
+var canvBtnLs = document.getElementById('page3').getElementsByTagName('span');
+canvBtnLs[0].onclick = function () {
+	getDateDraw('年龄','23','身高(mm)','174','体重(kg)','50','颜值','0','脑洞','998');
+}
+canvBtnLs[1].onclick = function () {
+	getDateDraw('攻城力','130','射鸡力','110','抗压力','119','熬夜力','120','想象力','250');
+}
+canvBtnLs[2].onclick = function () {
+	getDateDraw('HTML','70','Css2/3','72','Js','83','jQuery','40','PHP','35');
+}
+// 传参画图表，用来演示page3中的canvas
+function getDateDraw(n1,d1,n2,d2,n3,d3,n4,d4,n5,d5) {
+	for (var i = 1; i < canvNames.length; i++) {
+		canvNames[i].value = arguments[(i-1)*2];
+		canvDatas[i].value = arguments[i*2-1];
+	}
+	drawAllXls();
+}
+// 画图表
+function drawAllXls() {
+	var colors = ["#233","#886","#744","#320","#491"];
+	cxt.clearRect(0,0,500,400);
+	for (var i = 1; i < canvDatas.length; i++) {
+		var iX = 60*i;
+		//j colors的索引值，当表格列数大于colors.length时循环使用colors里的
+		var j = (i-1)%colors.length
+		drawXls(iX,380,25,canvDatas[i].value,colors[j],canvNames[i].value);
+	}
+}
+// 画坐标函数
+function drawCoord() {
+	cxt.fillStyle = "#FFF";
+	cxt.fillRect(20,380,470,1);
+	cxt.beginPath();
+	cxt.moveTo(490,380);
+	cxt.lineTo(480,377);
+	cxt.closePath();
+	cxt.strokeStyle = "#FFF";
+	cxt.stroke();
+	cxt.beginPath();
+	cxt.moveTo(490,381);
+	cxt.lineTo(480,384);
+	cxt.closePath();
+	cxt.stroke();
+	cxt.fillRect(20,20,1,360);
+	cxt.beginPath();
+	cxt.moveTo(20,20);
+	cxt.lineTo(17,30);
+	cxt.closePath();
+	cxt.stroke();
+	cxt.beginPath();
+	cxt.moveTo(21,20);
+	cxt.lineTo(24,30);
+	cxt.closePath();
+	cxt.stroke();
+}
+// 画单个柱形图函数 x横坐标原点 y纵坐标原点 oWidth柱形宽度 iTarget柱形目标高度 color颜色
+function drawXls(x,y,oWidth,iTarget,color,name) {
+	var oHeight = -1;
+	var timer = null;
+	clearInterval(timer);
+	cxt.fillStyle = color;
+	cxt.font = "12px Courier New";
+	cxt.fillText(name,x,y+14);
+	timer = setInterval(function(){
+		if (oHeight == iTarget) {
+			clearInterval(timer);			
+		} else {
+			cxt.clearRect(x,0,oWidth+35,400);
+			var speed = 0;
+			var oY = 0;
+			speed = (iTarget-oHeight)/10;
+			speed = Math.ceil(speed);
+			oHeight = oHeight + speed;
+			oY = y - oHeight;
+			cxt.fillStyle = color;
+			cxt.fillText(oHeight,x,oY-5);
+			cxt.fillRect(x,oY,oWidth,oHeight);
+			//画出横坐标上的项目名称
+			cxt.fillText(name,x,y+14);
+		}
+		drawCoord();
+		
+		if (iTarget >= 380) {
+			
+			cxt.fillStyle = "red";
+			var print = "哇~你的"+name+"已经突破天际啦~";
+			cxt.fillText(print,x+oWidth+2,x);
+		}
+	},30)
+	//drawCoord();
+}
+</script>
+</body>
+</html>
