@@ -30,10 +30,10 @@ body{overflow: hidden;
 .center{text-align: center;}
 #head{position: relative; width: 100%; height: 90%; background-color: #99F; text-align: center; filter: alpha(opacity:100); opacity: 1; color: #FFF; z-index: 2;}
 #btnShow{position: absolute; display: inline-block; bottom: 6px; width: 24px; margin-left: -16px; height: 24px; border: 1px solid #FFF; border-radius: 12px; color: #FFF; line-height: 16px; font-size: 20px; cursor: pointer;
-	 -webkit-animation:fadeIn 2s ease-in 0s infinite alternate;
-	    -moz-animation:fadeIn 2s ease-in 0s infinite alternate;
-	    -o-animation:fadeIn 2s ease-in 0s infinite alternate;
-	    animation:fadeIn 2s ease-in 0s infinite alternate; 
+	-webkit-animation:fadeIn 2s ease-in 0s infinite alternate;
+    -moz-animation:fadeIn 2s ease-in 0s infinite alternate;
+    -o-animation:fadeIn 2s ease-in 0s infinite alternate;
+    animation:fadeIn 2s ease-in 0s infinite alternate; 
 }
 
 #tip{position: absolute; margin-left: -46px; margin-top: -39px; opacity: 0.8;}
@@ -215,12 +215,13 @@ body{overflow: hidden;
 
 /*-----page3-----*/
 #page3 #page3-R-cont{width: 500px; margin: auto; }
-#page3 canvas{box-shadow: 5px 6px 7px #777;}
+#page3 canvas{margin-top: 10px; box-shadow: 5px 6px 7px #777;}
 #page3 table{margin-top: 6px; border-spacing: 2px; background-color: #FFC;}
 #page3 td,input{width: 70px; height: 20px;}
 #page3 caption input{width: 100px; text-align: center;}
 /*#page3 #canvBtn1{background-color: green; cursor: pointer;}*/
-#page3 .canvBtn-L{background-color: green; cursor: pointer;}
+#page3 .canvBtn-L{background-color: #D4D95C; cursor: pointer;}
+#page3 .canvBtn-L:hover{background-color: #E8EE6D;}
 /*-----page4-----*/
 #page4 ul{margin: 28px 0 0 20px; font-size: 16px;}
 #page4 ul li{margin-top: 14px; /*list-style: none;*/}
@@ -469,7 +470,6 @@ body{overflow: hidden;
 		</div>
 		<div class="page" id="page3">
 			<div class="page-right">
-				<br>
 				<div id="page3-R-cont">
 					<canvas id="canvas" width="500" height="400" style="background-color: #DDD"></canvas>
 					<br>
