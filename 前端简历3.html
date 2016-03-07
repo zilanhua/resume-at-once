@@ -28,15 +28,14 @@ body{overflow: hidden;
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{*+height:1%;}
 .center{text-align: center;}
-#head{position: relative; width: 100%; height: 90%; background-color: #99F; text-align: center; filter: alpha(opacity:100); opacity: 1; color: #FFF; z-index: 2;}
+#head{position: relative; width: 100%; height: 90%; background-color: #99F; text-align: center; opacity: 1; color: #FFF; z-index: 2;}
 #btnShow{position: absolute; display: inline-block; bottom: 6px; width: 24px; margin-left: -16px; height: 24px; border: 1px solid #FFF; border-radius: 12px; color: #FFF; line-height: 16px; font-size: 20px; cursor: pointer;
 	-webkit-animation:fadeIn 2s ease-in 0s infinite alternate;
     -moz-animation:fadeIn 2s ease-in 0s infinite alternate;
     -o-animation:fadeIn 2s ease-in 0s infinite alternate;
-    animation:fadeIn 2s ease-in 0s infinite alternate; 
+    animation:fadeIn 2s ease-in 0s infinite alternate;
 }
-
-#tip{position: absolute; margin-left: -46px; margin-top: -39px; opacity: 0.8;}
+#tip{position: absolute; margin-left: -46px; margin-top: -39px; opacity: 0.9;}
 #tip div{background-color: #C7EDCC; font-size: 12px; color: #555; border-radius: 3px}
 #tip #dsj{display: inline-block; border: transparent 0.5em solid; border-top-color: #C7EDCC; }
 #jianLi{display: inline-block; width: 600px; margin-bottom: 36px; padding: 10px 20px; text-align: left; border: 1px solid #CCC; border-radius: 10px; box-shadow: 0 0 7px #EEE inset;}
@@ -44,189 +43,59 @@ body{overflow: hidden;
 #jianLi p a{color: #FFF;}
 .impt{font-size: 24px; font-family: "微软雅黑"; text-shadow: 1px 2px 1px #AAA;}
 .impt:hover{text-shadow: 0 0 5px #F7C38A;}
-#allPage{position: absolute; top: 39px; bottom: 26px; z-index: -2; left: 0px;}
-#allpage span{font-size: 20px; font-family: "微软雅黑"; color: #FFF;}
-.page{float: left; height: 100%; overflow: auto; /*background-color: #ECF;*/}
-#foot{position: fixed; height: 26px; width: 100%; bottom: 0; background-color: #686; text-align: center;}
-.btnPage{display: inline-block; width: 12px; height: 12px; border-radius: 6px; background-color: #FAC; font-size: 8px; line-height: 8px; cursor: pointer;}
-.page-left{display: inline-block; vertical-align: middle; float: left; width: 40%; height: 100%; /*background-color: #BAB;*/}
-.page-right{display: inline-block; vertical-align: middle; /*padding: 50px 0 30px;*/ float: left; /*width: 50%;*/width: 60%; height: 100%; /*background-color: #ABA;*/}
+#allPage{position: absolute; top: 39px; bottom: 24px; z-index: -2; left: 0px;}
+.page{float: left; height: 100%; overflow: auto;}
+#foot{position: fixed; height: 24px; width: 100%; bottom: 0; background-color: #686; text-align: center; vertical-align: middle;}
+.page-left{display: inline-block; vertical-align: middle; float: left; width: 40%; height: 100%;}
+.page-right{display: inline-block; vertical-align: middle; float: left; width: 60%; height: 100%;}
+/*底部导航按钮*/
+.btnPage{display: inline-block; width: 12px; height: 12px; border-radius: 6px; background-color: #FAC; font-size: 8px; cursor: pointer;}
 /*-----page1-----*/
-#page1 img{width: 100%; margin-top: 20px;}
 #page1 p{padding: 18px 30px;}
 #page1 span{font-size: 18px; color: #FED648;}
 /*-----page2-----*/
-#page2 #page2-T{width: 100%; /*height: 30%;*/ }
+#page2 #page2-T{width: 100%;}
 #page2 #page2-T p{font-size: 17px; line-height: 21px;}
-#page2 #page2-B{width: 100%; /*height: 70%;*/}
-#page2 .page2-B-header{
-	text-align:center;
-	background-color:#00FF7F;
-	color:#fff;
-	width:100%;
-	height:58px;
-}
-#page2 .page2-B-header h1{
-	line-height:58px;
-	font-family:萝莉体 第二版;
-}
-#page2 #page2-B-cont{
-	height: 100%;
-	/*margin: 5px;*/
-	box-shadow: 0 0 8px;
-	text-align: center;
-}
-
-#page2 .gs{
-	color:#666;
-}
-#page2 .gs input{
-	width:12px;
-	color:#333;
-	background-color:#FFDAB9;
-	border: none;
-}
-#page2 .gs span{
-	font-size:13px;
-	color:#999;
-}
-#page2 .time{
-	margin:0  auto;
-	color: #799;
-}
-#page2 .table{
-	margin:0 auto;
-	width:924px;
-	font-family:微软雅黑;
-	color: #555;
-}
-#page2 .td,.td input{
-	width: 128px;
-	height: 30px;
-	float: left;
-	background-color:#FFDAB9;
-	color: #444;
-	border: 1px solid;
-	border-color: #F5F5DC;
-	text-align: center;
-	/*line-height: 28px;*/
-	border-radius:5px;
-}
-
-#page2 .tablehead input{
-	margin: 0;
-	padding: 0;
-	border:none;
-	float: left;
-	text-align:center;
-	line-height: 30px;
-	font-size: 14px;
-}
-#page2 .tablebody input{
-	margin: 0;
-	padding: 0;
-	border:none;
-	text-align:center;
-	line-height: 30px;
-}
-#page2 input:hover{
-	background-color: #ffe8b9;
-}
-#page2 .tablefoot{
-	margin: 0;
-	padding: 0;
-	border:none;
-	text-align:center;
-	line-height: 28px;
-	color: red;
-}
-#page2 .tablefoot .td{
-	background-color: #9faff5;
-}
-#page2 #name,#page2 #n_m,#page2 #n_n,#page2 #n_wm,#page2 #n_wa,#page2 #n_wn,#page2 #money{
-	width: 142px;
-	text-align: center;
-	background-color: #00ff7f;
-}
-#page2 #clearname{
-	font-size:13px;
-	color:#aaa;
-	cursor:pointer;
-}
-#page2 #clearname:hover{
-	color:#bbb;
-}
-
-
-#page2 #an{
-	width: 142px;
-	/*height: 30px;*/
-	background-color:#726adf;
-	color:#eee;
-	line-height:32px;
-	font-size: 14px;
-	cursor:pointer;
-}
-#page2 #an:hover{
-	background-color:#6666cc;
-}
-#page2 #addMan{
-	margin-top: 1px;
-	margin-left: 0px;
-	/*padding-left: 4px;*/
-	display: inline-block;
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	border-radius: 2px 13px 13px 2px;
-	background-color: #D0D6D9;
-	font-size: 22px;
-	line-height: 25px;
-	/*vertical-align: ;*/
-	color: #F1F1F1;
-	cursor:pointer;
-	/*box-shadow: 3px 3px 8px #AAA;*/
-}
-#page2 #addMan:hover{
-	background-color: #DAE1E5;
-	color: #FFF;
-}
-#page2 #subMan{
-	margin-top: 32px;
-	margin-left: 0px;
-	/*padding-left: 5px;*/
-	display: inline-block;
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	border-radius: 2px 13px 13px 2px;
-	background-color: #D0D6D9;
-	font-size: 24px;
-	line-height: 25px;
-	/*vertical-align: ;*/
-	color: #F1F1F1;
-	cursor:pointer;
-	/*box-shadow: 3px 3px 8px #AAA;*/
-}
-#page2 #subMan:hover{
-	background-color: #DAE1E5;
-	color: #FFF;
-}
-
+#page2 #page2-B{width: 100%;}
+#page2 .page2-B-header{text-align:center; background-color:#00FF7F;	color:#fff;	width:100%;	height:58px;}
+#page2 .page2-B-header h1{line-height:58px;}
+#page2 #page2-B-cont{margin: 0 auto; width: 98%; height: 100%; box-shadow: 0 0 8px;	text-align: center;}
+#page2 .gs{color:#666;}
+#page2 .gs input{width:12px; color:#333; background-color:#FFDAB9;}
+#page2 .gs span{font-size:13px;	color:#999;}
+#page2 .table{margin:0 auto; width:898px; font-family:微软雅黑; color: #555;}
+#page2 .td,.td input{width: 124px; height: 30px; float: left; background-color:#FFDAB9; color: #444; border: 1px solid #FFF; text-align: center; border-radius:5px;}
+#page2 .table-left{width: 140px; height: 30px; float: left;	border: 1px solid #FFF;	text-align: center; border-radius:5px; background-color: #00ff7f;}
+#page2 .tablehead input{float: left; text-align:center;	line-height: 30px; font-size: 14px;}
+#page2 .tablebody input{text-align:center; line-height: 30px;}
+#page2 input:hover{background-color: #ffe8b9;}
+#page2 .tablefoot{line-height: 28px; color: red;}
+#page2 .tablefoot .td{background-color: #9faff5;}
+#page2 #clearname{font-size:13px; color:#aaa; cursor:pointer;}
+#page2 #clearname:hover{color:#bbb;}
+#page2 #an{background-color:#726adf; color:#eee;	line-height:32px; font-size: 14px; cursor:pointer;}
+#page2 #an:hover{background-color:#6666cc;}
+#page2 .btnChgMan{margin-top: 2px; display: inline-block; position: absolute; width: 30px; height: 30px; border-radius: 2px 13px 13px 2px; background-color: #D0D6D9; font-size: 22px; line-height: 25px; color: #F1F1F1; cursor:pointer;}
+#page2 #subMan{margin-top: 33px;}
+#page2 #addMan:hover{background-color: #DAE1E5;	color: #FFF;}
+#page2 #subMan:hover{background-color: #DAE1E5;	color: #FFF;}
 /*-----page3-----*/
 #page3 #page3-R-cont{width: 500px; margin: auto; }
 #page3 canvas{margin-top: 10px; box-shadow: 5px 6px 7px #777;}
 #page3 table{margin-top: 6px; border-spacing: 2px; background-color: #FFC;}
 #page3 td,input{width: 70px; height: 20px;}
 #page3 caption input{width: 100px; text-align: center;}
-/*#page3 #canvBtn1{background-color: green; cursor: pointer;}*/
 #page3 .canvBtn-L{background-color: #D4D95C; cursor: pointer;}
 #page3 .canvBtn-L:hover{background-color: #E8EE6D;}
 /*-----page4-----*/
 #page4 ul{margin: 28px 0 0 20px; font-size: 16px;}
-#page4 ul li{margin-top: 14px; /*list-style: none;*/}
+#page4 ul li{margin-top: 14px;}
 #page4 p{margin: 10px 0 0 20px; font-size: 28px;}
 #page4 span{font-size: 20px;}
+/*-----page5-----*/
+#page5 {text-align: center; color: #333;}
+#page5 span{font-size: 25px; border: 2px solid #708b69; border-radius: 7px; color: #708b69; cursor: pointer;}
+#page5 span:hover{border: 2px solid #A0BB99; color: #A0BB99;}
 </style>
 <body>
 	<div id="head">
@@ -258,7 +127,7 @@ body{overflow: hidden;
 	<div id="allPage">
 		<div class="page" id="page1">
 			<div class="page-left">
-				<img src="http://g.hiphotos.baidu.com/image/pic/item/c8ea15ce36d3d539682d4f943d87e950352ab051.jpg"  alt="哎呀~本来这里应该是图片，可素，网络好像粗了问题，看不到了~">
+				<img src="http://g.hiphotos.baidu.com/image/pic/item/c8ea15ce36d3d539682d4f943d87e950352ab051.jpg" width="100%" alt="哎呀~本来这里应该是图片，可素，网络好像粗了问题，看不到了~" style="margin-top: 20px;">
 			</div>
 			<div class="page-right">
 				<p>
@@ -292,7 +161,7 @@ body{overflow: hidden;
 						<h1>$工资计算器$</h1>
 					</div>
 					<span class="gs">
-						(￣︶￣) ╯咱先谈好：<span>(改后即生效↓)</span><br/>
+						(￣︶￣) ╯咱先谈好<span>(改后即生效→)</span>：
 						中午/班<input class="dfdMoney" type="text" value=3 size="1">元
 						、晚班/班<input class="dfdMoney" type="text" value=6 size="1">元
 						、双休上/班<input class="dfdMoney" type="text" value=5 size="1">元
@@ -301,7 +170,7 @@ body{overflow: hidden;
 					</span>
 					<div class="table" name="table" id="table">
 						<div class="tablehead clearfix" id="tablehead">
-							<div class="td" id="name">
+							<div class="table-left" id="name">
 								馆员→_→
 								<span id="clearname" onclick="clearName()"> [清空]</span>
 							</div>
@@ -323,11 +192,11 @@ body{overflow: hidden;
 							<div class="td">
 								<input type="text" class="name" value="?_?" size="8">
 							</div>
-							<span id="addMan" title="添加一个馆员" onclick="addMan()">&nbsp;+</span>
-							<span id="subMan" title="去掉一个馆员" onclick="subMan()">&nbsp;-</span>
+							<span id="addMan" class="btnChgMan" title="添加一个馆员" onclick="addMan()">&nbsp;+</span>
+							<span id="subMan" class="btnChgMan" title="去掉一个馆员" onclick="subMan()">&nbsp;-</span>
 						</div>
 						<div class="tablebody clearfix">
-							<div class="td" id="n_m">
+							<div class="table-left">
 								中午
 							</div>
 							<div class="td">
@@ -350,7 +219,7 @@ body{overflow: hidden;
 							</div>
 						</div>
 						<div class="tablebody clearfix">
-							<div class="td" id="n_n">
+							<div class="table-left">
 								晚班
 							</div>
 							<div class="td">
@@ -373,7 +242,7 @@ body{overflow: hidden;
 							</div>
 						</div>
 						<div class="tablebody clearfix">
-							<div class="td" id="n_wm">
+							<div class="table-left">
 								双休上午
 							</div>
 							<div class="td">
@@ -396,7 +265,7 @@ body{overflow: hidden;
 							</div>
 						</div>
 						<div class="tablebody clearfix">
-							<div class="td" id="n_wa">
+							<div class="table-left">
 								双休下午
 							</div>
 							<div class="td">
@@ -419,7 +288,7 @@ body{overflow: hidden;
 							</div>
 						</div>
 						<div class="tablebody clearfix">
-							<div class="td" id="n_wn">
+							<div class="table-left">
 								双休晚班
 							</div>
 							<div class="td">
@@ -442,8 +311,8 @@ body{overflow: hidden;
 							</div>
 						</div>
 						<div class="tablefoot clearfix" id="tablefoot">
-							<div class="td" id="an" onclick="money()">
-								点我计算工资
+							<div class="table-left" id="an" onclick="money()">
+								计算工资
 							</div>
 							<div class="td">
 								<span class="money">$</span>
@@ -527,13 +396,16 @@ body{overflow: hidden;
 			</div>
 		</div>
 		
-		<div class="page">
-			<div class="page-left">
-				
-			</div>	
-			<div class="page-right">
-				
-			</div>
+		<div class="page" id="page5"><br>
+			<h2>今生唯一座右铭是：不是我能不能，而是我想不想</h2><br>
+			<h2>虽然我的代码还存在诸多缺陷，离一名合格程序员还相差甚远</h2>
+			<h2>但我知道，假以时日，我终会成长为一名攻城狮</h2>
+			<h2>毕竟，四个月前，我连一个html标签都不认识</h2><br>
+			<h2>如果，您的队伍不乏精兵良将</h2>
+			<h2>您的征途不介意一份单薄的助力</h2>
+			<h2>您的营帐不忌惮多分出一点粮草马厩</h2><br>
+			<h2>带上我可好？</h2><br><br>
+			<span>&nbsp;立即体验&nbsp;</span>
 		</div>
 	</div>
 	<div id="foot">
@@ -543,7 +415,7 @@ body{overflow: hidden;
 		<span class="btnPage">4</span>
 		<span class="btnPage">5</span>
 	</div>
-<script>
+<script type="text/javascript">
 //当前页数的索引
 var pageIndex = 0;
 //获取head初始高度
@@ -563,7 +435,7 @@ window.onload = function(){
 		}
 	}
 	allPage.style.width = stageWidth*5 + "px";
-	
+	changePage(0);
 	moveJianli();
 	//点标签切换
 	var btnPages = document.getElementById('foot').getElementsByTagName('span');
@@ -580,7 +452,11 @@ window.onload = function(){
 	canvBtn.onclick = function (){
 			drawAllXls();
 	}
-
+//立即体验 duang~
+	var expMe = document.getElementById('page5').getElementsByTagName('span')[0];
+	expMe.onclick=function () {
+		alert(1);
+	}
 }
 //升降简历函数
 function moveJianli() {
@@ -832,7 +708,7 @@ var table_width = document.getElementById("table").clientWidth;
 			tablefootTd.appendChild(tablefootTd_span);
 
 		//改变table宽度，使其自适应居中布局
-		table_width += 130;
+		table_width += 126;
 		var w=document.getElementById("table").style.width = table_width+"px";
 		console.log(w);
 
@@ -854,7 +730,7 @@ var table_width = document.getElementById("table").clientWidth;
 		var tablefoot_lastdiv = tablefoot_Div[tablefoot_Div.length-1];
 		tablefoot_lastdiv.parentNode.removeChild(tablefoot_lastdiv);
 		//改变table宽度，使其自适应居中布局
-		table_width -= 130;
+		table_width -= 126;
 		var w=document.getElementById("table").style.width = table_width+"px";
 		console.log(w);
 	}
