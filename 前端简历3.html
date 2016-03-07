@@ -423,7 +423,8 @@ var head = document.getElementById('head');
 var jianLiHeight = getStyle(head,'height');
 //获取页面宽度
 var stageWidth = head.clientWidth;
-
+//获得升降简历按钮
+var btnShow = document.getElementById('btnShow');
 window.onload = function(){
 	stageWidth = head.clientWidth;
 	
@@ -436,7 +437,9 @@ window.onload = function(){
 	}
 	allPage.style.width = stageWidth*5 + "px";
 	changePage(0);
-	moveJianli();
+	btnShow.onclick = function(){
+		moveJianli();
+	}
 	//点标签切换
 	var btnPages = document.getElementById('foot').getElementsByTagName('span');
 	for (var i = 0; i < btnPages.length; i++) {
@@ -455,13 +458,12 @@ window.onload = function(){
 //立即体验 duang~
 	var expMe = document.getElementById('page5').getElementsByTagName('span')[0];
 	expMe.onclick=function () {
-		alert(1);
+		//降下简历
+		moveJianli();
 	}
 }
 //升降简历函数
-function moveJianli() {
-	var btnShow = document.getElementById('btnShow');
-	btnShow.onclick = function(){
+function moveJianli() {	
 		var btnShow = document.getElementById('btnShow');
 		var jianLi = document.getElementById('jianLi');
 		
@@ -494,7 +496,7 @@ function moveJianli() {
     		document.removeEventListener('DOMMouseScroll', scrollFunc);
     		window.onmousewheel = document.onmousewheel = null; 
 		}
-	}
+	
 }
 // 滑轮翻页
 var scrollFunc = function (e) {
